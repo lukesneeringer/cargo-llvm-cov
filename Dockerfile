@@ -9,6 +9,6 @@ RUN apt update && \
 RUN rustup +nightly component add llvm-tools-preview
 
 # Install llvm-cov and nextest.
-RUN cargo +nightly install cargo-llvm-cov && \
-  cargo +nightly install cargo-nextest && \
+RUN cargo +nightly install --locked cargo-llvm-cov && \
+  cargo +nightly install --locked cargo-nextest && \
   rm -rf ~/.cargo/registry

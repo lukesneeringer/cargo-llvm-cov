@@ -1,6 +1,6 @@
 # llvm-cov image
 
-This repository contains Docker image for using `llvm-cov` to measure Rust coverage.
+This repository contains a Docker image for using `llvm-cov` to measure Rust coverage.
 
 It derives from the nightly Rust image (`rustlang/rust:nightly-slim`) and additionally installs
 `llvm-cov` as well as other dependencies that are commonly needed.
